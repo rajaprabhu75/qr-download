@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f2f5f9;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 20px;
+}
+
+.card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+
+    color: #1f2937;
+
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #374151;
+}
+
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.error {
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+.result-card {
+    max-width: 500px;
+}
+
+.employee {
+    color: #4b5563;
+
+    margin-bottom: 25px;
+}
+
+.qr-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.qr-image {
+    max-width: 350px;
+
+    width: 100%;
+
+    height: auto;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+}
+
+.download-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #16a34a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.download-button:hover {
+    background: #15803d;
+}
+
+.back-button {
+    display: block;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    padding: 10px;
+}
