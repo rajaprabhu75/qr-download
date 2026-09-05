@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR Code Download</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>QR Code Download</h1>
+
+        <p class="subtitle">
+            Enter your Employee ID to get your QR code
+        </p>
+
+        {% if error %}
+            <div class="error">
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <form method="POST">
+
+            <label for="emp_id">
+                Employee ID
+            </label>
+
+            <input
+                type="text"
+                id="emp_id"
+                name="emp_id"
+                placeholder="Example: 103"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Find QR Code
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
